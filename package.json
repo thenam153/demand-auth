@@ -1,0 +1,19 @@
+{
+  "name": "demand-auth",
+  "version": "1.0.0",
+  "description": "Auth2 for demand",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenam153/demand-auth.git"
+  },
+  "author": "Nam The",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thenam153/demand-auth/issues"
+  },
+  "homepage": "https://github.com/thenam153/demand-auth#readme"
+}
