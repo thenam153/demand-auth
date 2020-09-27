@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/thenam153/demand-auth#readme",
   "dependencies": {
+    "query-string": "^6.13.3",
     "statuses": "^2.0.0",
     "winston": "^3.3.3"
   }
