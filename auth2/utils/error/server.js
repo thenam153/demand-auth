@@ -13,3 +13,4 @@ function ServerError(message, properties) {
 util.inherits(ServerError, Error)
 
 module.exports = ServerError
+module.exports.name = NAME.SERVER

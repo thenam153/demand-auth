@@ -13,3 +13,4 @@ function InvalidTokenError(message, properties) {
 util.inherits(InvalidTokenError, Error)
 
 module.exports = InvalidTokenError
+module.exports.name = NAME.INVALID_TOKEN

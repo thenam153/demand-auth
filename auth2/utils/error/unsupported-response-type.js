@@ -13,3 +13,4 @@ function UnSupportedResponseTypeError(message, properties) {
 util.inherits(UnSupportedResponseTypeError, Error)
 
 module.exports = UnSupportedResponseTypeError
+module.exports.name = NAME.UNSUPPORTED_RESPONSE_TYPE

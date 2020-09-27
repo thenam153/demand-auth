@@ -15,3 +15,19 @@ module.exports.MESSAGE = {
 module.exports.CODE = {
 
 }
+
+module.exports.NAME = {
+    ACCESS_DENIED: 'accessDenied',
+    INVALID_ARGUMENT: 'invalidArgument',
+    INVALID_CLIENT: 'invalidClient',
+    INVALID_GRANT: 'invalidGrant',
+    INVALID_REQUEST: 'invalidRequest',
+    INVALID_SCOPE: 'invalidScope',
+    INVALID_TOKEN: 'invalidToken',
+    OAUTH: 'oauth',
+    SERVER: 'serverError',
+    UNAUTHORIZED_CLIENT: 'unauthorizedClient',
+    UNAUTHORIZED_REQUEST: 'unauthorizedRequest',
+    UNSUPPORTED_GRANT_TYPE: 'unsupportedGrantType',
+    UNSUPPORTED_RESPONSE_TYPE: 'unsupportedResponseType',
+}

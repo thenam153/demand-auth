@@ -13,3 +13,4 @@ function InvalidGrantError(message, properties) {
 util.inherits(InvalidGrantError, Error)
 
 module.exports = InvalidGrantError
+module.exports.name = NAME.INVALID_GRANT

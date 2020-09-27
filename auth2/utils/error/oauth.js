@@ -18,3 +18,4 @@ function OAuthError(message, properties = {}) {
 util.inherits(OAuthError, Error)
 
 module.exports = OAuthError
+module.exports.name = NAME.OAUTH

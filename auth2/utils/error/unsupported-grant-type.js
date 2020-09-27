@@ -13,3 +13,4 @@ function UnSupportedGrantTypeError(message, properties) {
 util.inherits(UnSupportedGrantTypeError, Error)
 
 module.exports = UnSupportedGrantTypeError
+module.exports.name = NAME.UNSUPPORTED_GRANT_TYPE

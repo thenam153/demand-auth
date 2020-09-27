@@ -13,3 +13,4 @@ function InvalidScopeError(message, properties) {
 util.inherits(InvalidScopeError, Error)
 
 module.exports = InvalidScopeError
+module.exports.name = NAME.INVALID_SCOPE

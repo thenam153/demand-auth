@@ -13,3 +13,4 @@ function UnAuthorizedRequestError(message, properties) {
 util.inherits(UnAuthorizedRequestError, Error)
 
 module.exports = UnAuthorizedRequestError
+module.exports.name = NAME.UNAUTHORIZED_REQUEST

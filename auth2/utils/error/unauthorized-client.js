@@ -13,3 +13,4 @@ function UnAuthorizedClientError(message, properties) {
 util.inherits(UnAuthorizedClientError, Error)
 
 module.exports = UnAuthorizedClientError
+module.exports.name = NAME.UNAUTHORIZED_CLIENT

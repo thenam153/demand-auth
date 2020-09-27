@@ -13,3 +13,4 @@ function InvalidClientError(message, properties) {
 util.inherits(InvalidClientError, Error)
 
 module.exports = InvalidClientError
+module.exports.name = NAME.INVALID_CLIENT

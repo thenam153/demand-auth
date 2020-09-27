@@ -13,3 +13,4 @@ function InvalidArgumentError(message, properties) {
 util.inherits(InvalidArgumentError, Error)
 
 module.exports = InvalidArgumentError
+module.exports.name = NAME.INVALID_ARGUMENT

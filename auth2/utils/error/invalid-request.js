@@ -13,3 +13,4 @@ function InvalidRequestError(message, properties) {
 util.inherits(InvalidRequestError, Error)
 
 module.exports = InvalidRequestError
+module.exports.name = NAME.INVALID_REQUEST
