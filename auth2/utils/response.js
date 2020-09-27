@@ -53,7 +53,7 @@ function send(req, res, code, obj) {
     res.header('Cache-Control', 'no-store');
     res.header('Pragma','no-cache');
     res.send(obj);
-    res.oauth.logger.debug('Response', obj) : null
+    res.oauth.logger.debug('Response', obj)
 }
 function redirect(req, res, redirectUri) {
     res.statusCode = 302
