@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/thenam153/demand-auth/issues"
   },
-  "homepage": "https://github.com/thenam153/demand-auth#readme"
+  "homepage": "https://github.com/thenam153/demand-auth#readme",
+  "dependencies": {
+    "statuses": "^2.0.0"
+  }
 }
