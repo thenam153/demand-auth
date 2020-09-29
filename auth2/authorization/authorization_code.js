@@ -1,7 +1,7 @@
 const async = require('async')
 const Response = require('../utils/response')
 const error =  require('../utils/error')
-const responseType = require('../utils/response_type')
+// const responseType = require('../utils/response_type')
 
 module.exports = function(params, pCallback) {
     var {req, res, client, scope, user, redirectUri, state} = params
@@ -38,7 +38,7 @@ module.exports = function(params, pCallback) {
             return response.error(err, redirectUri)
         }
         pCallback(null)
-        let responseCode = new responseType.code(code, state)
-        return response.data(responseCode, redirectUri)
+        // let responseCode = new responseType.code(code, state)
+        return response.data({code: req.auth.model.getCode(code), state: state}, redirectUri)
     })
 }

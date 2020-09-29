@@ -1,7 +1,7 @@
 const async = require('async')
 const Response = require('../utils/response')
 const error =  require('../utils/error')
-const responseType = require('../utils/response_type')
+// const responseType = require('../utils/response_type')
 
 module.exports = function(params, pCallback) {
     var {req, res, client, scope, user, redirectUri, state} = params
@@ -39,7 +39,7 @@ module.exports = function(params, pCallback) {
         }
         pCallback(null)
         let expires = 60 * 60 * 24
-        let responseToken = new responseType.Token(accessToken, state, {expires})
-        return response.data(responseToken, redirectUri)
+        // let responseToken = new responseType.Token(accessToken, state, {expires})
+        return response.data({access_token: model.accessToken.getAccessToken(accessToken), expires_in: expires, token_type: 'bearer', state: state}, redirectUri)
     })
 }

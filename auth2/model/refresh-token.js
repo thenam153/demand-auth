@@ -57,4 +57,8 @@ module.exports.createPromise = function(userId, clientId, scope, ttl) {
     throw new error.serverError('Refesh Token model method "createPromise" is not implemented')
 }
 
+module.exports.renewRefreshToken = function(refreshToken, callback) {
+    throw new error.serverError('Refesh Token model method "renewRefreshToken" is not implemented')
+}
+
 module.exports.name = "refreshToken"

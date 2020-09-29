@@ -51,7 +51,7 @@ module.exports.checkGrant = function(client, grant) {
     return true
 }
 
-module.exports.checkScope = function(scope) {
+module.exports.checkScope = function(client, scope) {
     switch(typeof scope) {
         case 'string':
             return []

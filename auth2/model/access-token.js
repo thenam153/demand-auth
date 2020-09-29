@@ -45,6 +45,10 @@ module.exports.createPromise = function(userId, clientId, scope) {
     throw new error.serverError('accessToken model not implemented method "createPromise"')
 }
 
+module.exports.renewAccessToken = function(accessToken, callback) {
+    throw new error.serverError('accessToken model not implemented method "renewAccessToken"')
+}
+
 module.exports.ttl = 60 * 60 * 24
 
 module.exports.name = "accessToken"

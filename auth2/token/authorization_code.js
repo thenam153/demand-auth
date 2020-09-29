@@ -4,7 +4,7 @@ const GRANT_TYPE = require('../utils/message').GRANT_TYPE
 const Response = require('../utils/response')
 
 module.exports = function(params, pCallback) {
-    let {req, client} = params
+    let {req, res, client} = params
     let code = req.body.code
     let redirectUri = req.body.redirect_uri
     let model = req.auth.model
@@ -36,7 +36,7 @@ module.exports = function(params, pCallback) {
         },
         function(callback) {
             if(!model.client.checkGrantType(client, GRANT_TYPE.REFRESH_TOKEN)) {
-                return callback(new error.invalidClient('. . . '))
+                return callback()
             }
             
             model.refreshToken.create(model.client.getClientId(client), model.code.getUserId(codeObj), model.code.getScope(codeObj), function(err, data) {
@@ -75,10 +75,12 @@ module.exports = function(params, pCallback) {
     ], function(err, data) {
         let response = new Response(req, res)
         if(err) {
-            new response.error(err)
+            pCallback(err)
+            return new response.error(err)
         }
         data.token_type = 'bearer'
-        new Response(req, res).data(data)
+        pCallback()
+        return response.data(data)
     })  
 
 }
