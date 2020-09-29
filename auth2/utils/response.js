@@ -59,7 +59,7 @@ function redirect(req, res, redirectUri) {
     res.statusCode = 302
     res.header('Location', redirectUri);
     res.end();
-    req.oauth2.logger.debug('Redirect to: ' + redirectUri);
+    req.oauth.logger.debug('Redirect to: ' + redirectUri);
 }
 
 module.exports = Response

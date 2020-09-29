@@ -42,4 +42,8 @@ module.exports.getByRequest = function(req) {
     throw new error.serverError('User model method "getByRequest" is not implemented')
 }
 
+module.exports.getFromRequest = function(req) {
+    throw new error.serverError('User model method "getByRequest" is not implemented')
+}
+
 module.exports.name = "user"

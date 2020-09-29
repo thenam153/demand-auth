@@ -37,7 +37,7 @@ module.exports.getTTL = function(accessToken) {
     throw new error.serverError('accessToken model not implemented method "getTTL"')
 }
 
-module.exports.create = function(userId, clientId, scope, callback) {
+module.exports.create = function(userId, clientId, scope, callback, ttl) {
     throw new error.serverError('accessToken model not implemented method "create"')
 }
 

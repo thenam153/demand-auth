@@ -31,3 +31,16 @@ module.exports.NAME = {
     UNSUPPORTED_GRANT_TYPE: 'unsupportedGrantType',
     UNSUPPORTED_RESPONSE_TYPE: 'unsupportedResponseType',
 }
+
+module.exports.RESPONSE_TYPE = {
+    CODE: 'code',
+    TOKEN: 'token'
+}
+
+module.exports.GRANT_TYPE = {
+    AUTHORIZATION_CODE: 'authorization_code',
+    IMPLICIT: 'implicit',
+    REFRESH_TOKEN: 'refresh_token',
+    CLIENT_CREDENTIALS: 'client_credentials',
+    PASSWORD: 'password'
+}
