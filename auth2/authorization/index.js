@@ -1,5 +1,5 @@
 const async = require('async')
-const authorizedCode = require('./authorized_code')
+const authorizationCode = require('./authorization_code')
 const implicit = require('./implicit')
 const error = require('../utils/error')
 const RESPONSE_TYPE = require('../utils/message').RESPONSE_TYPE 
@@ -102,7 +102,7 @@ module.exports = function(req, res, next) {
             return req.auth.decision()
         }
         if(grantType == GRANT_TYPE.AUTHORIZATION_CODE) {
-            return authorizedCode({req, res, client, user, scope, redirectUri, state})
+            return authorizationCode({req, res, client, user, scope, redirectUri, state})
         }
         if(grantType == GRANT_TYPE.IMPLICIT) {
             return implicit({req, res, client, user, scope, redirectUri, state})
